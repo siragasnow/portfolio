@@ -74,6 +74,7 @@ body {
   font-family: sans-serif;
   background: #2c3e50;
 }
+
 h1 {
   text-align: center;
   margin: 40px 0 40px;
@@ -229,8 +230,59 @@ h1 {
 	padding: 30px;
 }
 
+/* プロフィールページ */
+
+.profile {
+  display: flex;
+}
+
+.profile-item {
+  width: 50%;
+  color: #ecf0f1;
+  font-family: 'Cherry Swash',cursive;
+  text-align: center;
+}
+.myname {
+  font-size: 20px;
+}
+
+.introduce {
+}
+
+.profile-contents {
+  margin-top: 30px;
+}
+
+.profile-link {
+  margin-top: 30px;
+  font-size: 18px;
+}
+
+.profile-link a:link {
+  color: #ecf0f1;
+}
+
+.profile-link a:visited {
+  color: #2BD6B4;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .footer_logo {
   position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #ecf0f1;
+  font-family: 'Cherry Swash',cursive;
+  font-size: 16px;
+}
+
+.footer_logo_pf {
   bottom: 20px;
   width: 100%;
   text-align: center;
@@ -245,7 +297,45 @@ h1 {
 
 /* レスポンシブ対応 */
 @media (max-width:425px) {
+  
+  .title {
+    font-size: 20px;
+  }
+  
   nav {
     display: none;
   }
+
+  /* ポートフォリオページ（レスポンシブ） */
+  .portfolio_list {
+    text-align: center;
+    display: inline-block;
+  }
+
+  .portfolio_list_item {
+    width: 80%;
+  }
+
+  /* プロフィールページ（レスポンシブ） */
+  .profile {
+    display: inline-block;
+  }
+
+  .profile-item {
+    width: 100%;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    text-align: center;
+  }
+
+  .profile-img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+  }
+
+  .pc-br {
+    display: none;
+  }
+
 }
