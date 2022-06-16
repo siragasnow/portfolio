@@ -1,3 +1,4 @@
+// モーダルウインド
 $(function(){
 	// 変数に要素を入れる
 	var open = $('.modal-open'),
